@@ -9,7 +9,7 @@ services:
       --wiredTigerCacheSizeGB 0.1
       --bind_ip 0.0.0.0      
     environment:
-      MONGO_INITDB_ROOT_USERNAME: riyan
+      MONGO_INITDB_ROOT_USERNAME: syeda
       MONGO_INITDB_ROOT_PASSWORD: test
       # For using below create .env file and pass in it so it will directly pick from there
       # MONGO_INITDB_ROOT_USERNAME: ${MONGO_USERNAME}
@@ -26,8 +26,8 @@ services:
     depends_on:
       - mongodb
     environment:
-      MONGO_CONN_STR: mongodb://riyan:test@mongodb:27017/admin
-      MONGO_USERNAME: riyan
+      MONGO_CONN_STR: mongodb://syeda:test@mongodb:27017/admin
+      MONGO_USERNAME: syeda
       MONGO_PASSWORD: test
       # MONGO_INITDB_ROOT_USERNAME: ${MONGO_USERNAME}
       # MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
